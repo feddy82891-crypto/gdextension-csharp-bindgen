@@ -2,6 +2,7 @@ from pathlib import Path
 
 import model
 
+import os
 import re
 
 TEMPLATES_DIR = Path(__file__).parent / "templates"
@@ -316,6 +317,8 @@ class CSharpBindingGenerator():
             file.close()
 
     def generate_classes(self):
+        os.makedirs("bindings", exist_ok=True)
+        
         for extension_class in self.api.classes.values():
             if extension_class.api_type == "extension":
                 self.generate_class(extension_class)
