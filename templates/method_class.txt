@@ -1,0 +1,4 @@
+public class MethodName : %INHERITS%.MethodName
+{
+    %METHOD_NAMES%
+}

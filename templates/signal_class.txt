@@ -1,0 +1,4 @@
+public class SignalName : %INHERITS%.SignalName
+{
+    %SIGNAL_NAMES%
+}

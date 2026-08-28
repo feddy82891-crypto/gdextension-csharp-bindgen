@@ -1,0 +1,6 @@
+__pycache__/
+
+bindings/
+extension_api.json
+
+.vscode

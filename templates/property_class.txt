@@ -1,0 +1,4 @@
+public class PropertyName : %INHERITS%.PropertyName
+{
+    %PROPERTY_NAMES%
+}

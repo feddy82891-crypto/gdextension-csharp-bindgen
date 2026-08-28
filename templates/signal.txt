@@ -1,0 +1,11 @@
+public event Action%INNER_TYPE% %PASCAL_NAME%
+{
+    add
+    {
+        Connect(SignalName.%PASCAL_NAME%, Callable.From(value));
+    }
+    remove
+    {
+        Disconnect(SignalName.%PASCAL_NAME%, Callable.From(value));
+    }
+}

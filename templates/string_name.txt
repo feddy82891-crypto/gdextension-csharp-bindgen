@@ -1,0 +1,1 @@
+public static readonly StringName %PASCAL_NAME% = "%NAME%";

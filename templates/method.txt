@@ -1,0 +1,4 @@
+public %RETURN_VALUE% %PASCAL_NAME%(%ARGUMENTS%)
+{
+    %RETURN% _object.Call(MethodName.%PASCAL_NAME% %ARGUMENT_NAMES%);
+}

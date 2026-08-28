@@ -1,0 +1,5 @@
+public %TYPE% %PASCAL_NAME%
+{
+    get => _object.%PASCAL_NAME%;
+    %SETTER%
+}

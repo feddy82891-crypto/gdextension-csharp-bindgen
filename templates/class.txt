@@ -1,0 +1,47 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+using Godot;
+
+namespace GDExtensionBindings;
+
+public class %NAME%
+{
+    protected %INHERITS% _object;
+
+    %ENUMS%
+
+    public %NAME%() : this(NativeName)
+	{
+	}
+
+	protected %NAME%(StringName @class) : this(ClassDB.Instantiate(@class))
+	{
+	}
+
+	protected %NAME%(Variant variant) : this((%INHERITS%) variant)
+	{
+	}
+
+	protected %NAME%([NotNull] %INHERITS% @object)
+	{
+		_object = @object;
+	}
+
+    public static implicit operator %INHERITS%(%NAME% self) => self?._object;
+    public static implicit operator Variant(%NAME% self) => self?._object;
+    public static explicit operator %NAME% (Variant variant) => variant.AsGodotObject() != null ? new(variant) : null;
+
+    %PROPERTY_NAMES%
+
+    %METHOD_NAMES%
+    
+    %SIGNAL_NAMES%
+
+    private static readonly StringName NativeName = "%NAME%";
+
+    %PROPERTIES%
+
+    %METHODS%
+
+    %SIGNALS%
+}

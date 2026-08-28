@@ -1,0 +1,4 @@
+public %RETURN_VALUE% %PASCAL_NAME%(%ARGUMENTS%)
+{
+    %RETURN% _object.%PASCAL_NAME%(%ARGUMENT_NAMES%);
+}

@@ -1,0 +1,5 @@
+public %TYPE% %PASCAL_NAME%
+{
+    get => (%TYPE%)_object.Get(PropertyName.%PASCAL_NAME%);
+    %SETTER%
+}
