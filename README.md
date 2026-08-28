@@ -35,3 +35,5 @@ Python 3 is required.
 ## How it works
 
 The tool parses the Extension API file into Python objects, resolves and converts Godot API types into their corresponding C# representations, and generates C# source code by loading templates and replacing placeholders with the generated values.
+# gdextension-csharp-bindgen
+C#-bindings generator for GDExtension classes
